@@ -11,7 +11,7 @@ import SwiftUI
 struct GECApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabBarView()
         }
     }
 }
