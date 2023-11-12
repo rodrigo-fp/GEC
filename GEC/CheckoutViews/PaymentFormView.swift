@@ -12,10 +12,7 @@ struct PaymentFormView: View {
     @State private var expirationDate: String = ""
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("2. Forma de pago")
-                .bold()
-                .padding(.all, 10)
+        CheckoutItemView(titleItem: "2.- Forma de pago") {
             VStack(alignment: .leading) {
                 HStack {
                     Image(systemName: "heart.fill").foregroundColor(.red)

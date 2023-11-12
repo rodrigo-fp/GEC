@@ -9,10 +9,7 @@ import SwiftUI
 
 struct DeliveryView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("1. Entrega")
-                .bold()
-                .padding(.all, 10)
+        CheckoutItemView(titleItem: "1.- Entrega") {
             VStack(alignment: .leading) {
                 HStack {
                     Text("Click & Collect")
