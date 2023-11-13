@@ -13,34 +13,26 @@ struct PaymentFormView: View {
     
     var body: some View {
         CheckoutItemView(titleItem: "2.- Forma de pago") {
-            VStack(alignment: .leading) {
-                HStack {
-                    Image(systemName: "heart.fill").foregroundColor(.red)
-                    Text("Citi").bold()
-                    Text("*5066")
-                    Spacer()
-                    Text("Cambiar").underline()
-                }.padding(.all, 20)
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Fecha de vencimiento").font(.caption)
-                        TextField("MM/AA*", text: $expirationDate)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                    }
-                    VStack(alignment: .leading) {
-                        Text("Código de Seguridad")
-                            .font(.caption)
-                        TextField("CVV*", text: $expirationDate)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                    }
-                }.padding([.leading, .trailing, .bottom], 20)
+            HStack {
+                Image(systemName: "heart.fill").foregroundColor(.red)
+                Text("Citi").bold()
+                Text("*5066")
+                Spacer()
+                Text("Cambiar").underline()
+            }.padding(.bottom, -20)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Fecha de vencimiento").font(.caption)
+                    TextField("MM/AA*", text: $expirationDate)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                VStack(alignment: .leading) {
+                    Text("Código de Seguridad")
+                        .font(.caption)
+                    TextField("CVV*", text: $expirationDate)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
             }
-            .frame(maxWidth: .infinity)
-            .background(Color.white)
-            .clipShape(RoundedRectangle(cornerRadius: 5))
-            .shadow(radius: 10)
-            .padding(.all, 10)
         }
     }
 }

@@ -17,6 +17,7 @@
 		6D9E42882B009F8500B2D0EE /* PaymentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E42872B009F8500B2D0EE /* PaymentFormView.swift */; };
 		6D9E428A2B009FC800B2D0EE /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E42892B009FC800B2D0EE /* DeliveryView.swift */; };
 		6D9E428C2B00A0B400B2D0EE /* CheckoutItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E428B2B00A0B400B2D0EE /* CheckoutItemView.swift */; };
+		6D9E428E2B0262EF00B2D0EE /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E428D2B0262EF00B2D0EE /* ProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6D9E42872B009F8500B2D0EE /* PaymentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormView.swift; sourceTree = "<group>"; };
 		6D9E42892B009FC800B2D0EE /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
 		6D9E428B2B00A0B400B2D0EE /* CheckoutItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutItemView.swift; sourceTree = "<group>"; };
+		6D9E428D2B0262EF00B2D0EE /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				6D9E42872B009F8500B2D0EE /* PaymentFormView.swift */,
 				6D9E42892B009FC800B2D0EE /* DeliveryView.swift */,
 				6D9E428B2B00A0B400B2D0EE /* CheckoutItemView.swift */,
+				6D9E428D2B0262EF00B2D0EE /* ProductView.swift */,
 			);
 			path = CheckoutViews;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D25E3AD2AF3EE12004D4AE6 /* CategoriesView.swift in Sources */,
+				6D9E428E2B0262EF00B2D0EE /* ProductView.swift in Sources */,
 				6D9E428C2B00A0B400B2D0EE /* CheckoutItemView.swift in Sources */,
 				6D9E428A2B009FC800B2D0EE /* DeliveryView.swift in Sources */,
 				6D25E39D2AF3ECDF004D4AE6 /* HomeView.swift in Sources */,
