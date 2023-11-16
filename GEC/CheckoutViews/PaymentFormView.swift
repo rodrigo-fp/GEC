@@ -10,6 +10,7 @@ import SwiftUI
 struct PaymentFormView: View {
     
     @State private var expirationDate: String = ""
+    @State private var cvv: String = ""
     
     var body: some View {
         CheckoutItemView(titleItem: "2.- Forma de pago") {
@@ -29,7 +30,7 @@ struct PaymentFormView: View {
                 VStack(alignment: .leading) {
                     Text("Código de Seguridad")
                         .font(.caption)
-                    TextField("CVV*", text: $expirationDate)
+                    TextField("CVV*", text: $cvv)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
             }
