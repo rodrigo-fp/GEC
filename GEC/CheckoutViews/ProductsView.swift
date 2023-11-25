@@ -71,6 +71,6 @@ struct ProductsView: View {
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView()
+        ProductsView()
     }
 }

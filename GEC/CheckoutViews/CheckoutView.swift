@@ -10,13 +10,14 @@ import SwiftUI
 struct CheckoutView: View {
 
     var body: some View {
-        VStack(alignment: .leading) {
-            DeliveryView()
-            PaymentFormView()
-            ProductsView()
+        ScrollView {
+            VStack(alignment: .leading) {
+                DeliveryView()
+                PaymentFormView()
+                ProductsView()
+            }
         }
     }
-
 }
 
 struct CheckoutView_Previews: PreviewProvider {
