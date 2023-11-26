@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CheckoutView: View {
+struct MainCheckoutView: View {
 
     var body: some View {
         ScrollView {
@@ -22,6 +22,6 @@ struct CheckoutView: View {
 
 struct CheckoutView_Previews: PreviewProvider {
     static var previews: some View {
-        CheckoutView()
+        MainCheckoutView()
     }
 }
