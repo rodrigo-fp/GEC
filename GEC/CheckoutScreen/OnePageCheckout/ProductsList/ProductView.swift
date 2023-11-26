@@ -18,14 +18,14 @@ struct ProductView: View {
                 Divider()
                 HStack {
                     productImage
-                    productDescription
+                    productInformation
                 }
                 promotionSelector
             }.padding(.bottom, 15)
         }
     }
     
-    var estimatedDelivery: some View {
+    private var estimatedDelivery: some View {
         HStack {
             Text("Entrega estimada:")
             Text("18 noviembre de 2023")
@@ -33,13 +33,13 @@ struct ProductView: View {
         }
     }
     
-    var productImage: some View {
+    private var productImage: some View {
         Image(systemName: "pencil")
             .frame(width: 100, height: 150)
             .background(.yellow)
     }
     
-    var productDescription: some View {
+    private var productInformation: some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("Abrigo Gianfranco Dunna con bolsillos para hombre")
             Text("Cantidad: 1, Talla: G, Color: Gris, Material: Poliéster")
@@ -48,7 +48,7 @@ struct ProductView: View {
         }.fixedSize(horizontal: false, vertical: true) // This prevents truncating text inside vstack
     }
     
-    var quantityModifier: some View {
+    private var quantityModifier: some View {
         HStack(alignment: .center) {
             Image(systemName: "trash")
             TextField("1", text: $quantity)
@@ -57,7 +57,7 @@ struct ProductView: View {
         }
     }
     
-    var promotionSelector: some View {
+    private var promotionSelector: some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("*Elige una promoción")
             HStack {

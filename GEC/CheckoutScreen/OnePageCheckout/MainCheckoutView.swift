@@ -21,7 +21,7 @@ struct MainCheckoutView: View {
                     TermsAndPrivacyView()
                 }
             }
-            .background(Color(red: 0.84, green: 0.84, blue: 0.84,opacity: 0.2))
+            .background(Color.lightGrayBackground)
             StickyBottomComponent()
         }
     }
