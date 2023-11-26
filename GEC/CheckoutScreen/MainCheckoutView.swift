@@ -17,6 +17,7 @@ struct MainCheckoutView: View {
                     DeliveryView()
                     PaymentFormView()
                     ProductsListView()
+                    PurchaseSummaryView()
                 }
             }
             .background(Color(red: 0.84, green: 0.84, blue: 0.84,opacity: 0.2))
