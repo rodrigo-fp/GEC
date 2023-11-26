@@ -7,20 +7,32 @@
 
 import SwiftUI
 
-struct ProductsView: View {
+struct ProductsListView: View {
     @State private var quantity: String = ""
     
     var body: some View {
-        CheckoutItemView(titleItem: "3.- Artículos") {
-            VStack(alignment: .leading, spacing: 15) {
-                estimatedDelivery
-                HStack {
-                    productImage
-                    productDescription
-                }
-                promotionSelector
+        VStack(alignment: .leading) {
+            Text("3. Artículos")
+                .bold()
+                .padding(.all, 10)
+            CardComponent {
+                productCell
+            }
+            CardComponent {
+                productCell
             }
         }
+    }
+    
+    var productCell: some View {
+        VStack(alignment: .leading, spacing: 15) {
+            estimatedDelivery
+            HStack {
+                productImage
+                productDescription
+            }
+            promotionSelector
+        }.padding(.bottom, 15)
     }
     
     var estimatedDelivery: some View {
@@ -71,6 +83,6 @@ struct ProductsView: View {
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductsView()
+        ProductsListView()
     }
 }

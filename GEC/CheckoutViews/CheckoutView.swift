@@ -14,7 +14,7 @@ struct CheckoutView: View {
             VStack(alignment: .leading) {
                 DeliveryView()
                 PaymentFormView()
-                ProductsView()
+                ProductsListView()
             }
         }
     }
