@@ -10,12 +10,17 @@ import SwiftUI
 struct MainCheckoutView: View {
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                DeliveryView()
-                PaymentFormView()
-                ProductsListView()
+        VStack {
+            StickyTopComponent()
+            ScrollView {
+                VStack(alignment: .leading) {
+                    DeliveryView()
+                    PaymentFormView()
+                    ProductsListView()
+                }
             }
+            .background(Color(red: 0.84, green: 0.84, blue: 0.84,opacity: 0.2))
+            StickyBottomComponent()
         }
     }
 }
