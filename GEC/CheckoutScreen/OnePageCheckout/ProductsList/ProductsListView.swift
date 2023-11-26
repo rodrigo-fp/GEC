@@ -14,8 +14,8 @@ struct ProductsListView: View {
             Text("3. Artículos")
                 .bold()
                 .padding(.all, 10)
-            ProductView()
-            ProductView()
+            CheckoutProductView()
+            CheckoutProductView()
         }
     }
 }

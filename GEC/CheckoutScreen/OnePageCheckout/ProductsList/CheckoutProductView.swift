@@ -1,5 +1,5 @@
 //
-//  ProductView.swift
+//  CheckoutProductView.swift
 //  GEC
 //
 //  Created by Rodrigo Francisco on 25/11/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProductView: View {
+struct CheckoutProductView: View {
     
     @State private var quantity: String = ""
     
@@ -15,14 +15,17 @@ struct ProductView: View {
         GenericCardContainerView {
             VStack(alignment: .leading, spacing: 15) {
                 estimatedDelivery
-                Divider()
-                HStack(alignment: .top) {
-                    productImage
-                    productInformation
-                    optionButton
-                }
+                productInformationView
                 promotionSelector
             }.padding(.bottom, 15)
+        }
+    }
+    
+    private var productInformationView: some View {
+        HStack(alignment: .top) {
+            productImage
+            productInformation
+            optionButton
         }
     }
     
@@ -33,10 +36,13 @@ struct ProductView: View {
     }
     
     private var estimatedDelivery: some View {
-        HStack {
-            Text("Entrega estimada:")
-            Text("18 noviembre de 2023")
-            Spacer()
+        VStack {
+            HStack {
+                Text("Entrega estimada:")
+                Text("18 noviembre de 2023")
+                Spacer()
+            }
+            Divider()
         }
     }
     
@@ -79,5 +85,5 @@ struct ProductView: View {
 }
 
 #Preview {
-    ProductView()
+    CheckoutProductView()
 }
