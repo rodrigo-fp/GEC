@@ -16,13 +16,20 @@ struct ProductView: View {
             VStack(alignment: .leading, spacing: 15) {
                 estimatedDelivery
                 Divider()
-                HStack {
+                HStack(alignment: .top) {
                     productImage
                     productInformation
+                    optionButton
                 }
                 promotionSelector
             }.padding(.bottom, 15)
         }
+    }
+    
+    private var optionButton: some View {
+        Image(systemName: "ellipsis")
+            .rotationEffect(.degrees(90))
+            .padding(.top, 15)
     }
     
     private var estimatedDelivery: some View {
