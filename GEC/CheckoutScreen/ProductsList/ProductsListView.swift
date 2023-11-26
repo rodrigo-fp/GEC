@@ -15,10 +15,10 @@ struct ProductsListView: View {
             Text("3. Artículos")
                 .bold()
                 .padding(.all, 10)
-            CardComponent {
+            GenericCardContainerView {
                 productCell
             }
-            CardComponent {
+            GenericCardContainerView {
                 productCell
             }
         }

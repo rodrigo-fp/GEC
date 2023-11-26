@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034FEED52B12ECD800030A8C /* GenericCardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */; };
 		6D25E39B2AF3ECDF004D4AE6 /* GECApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25E39A2AF3ECDF004D4AE6 /* GECApp.swift */; };
 		6D25E39D2AF3ECDF004D4AE6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25E39C2AF3ECDF004D4AE6 /* HomeView.swift */; };
 		6D25E39F2AF3ECE8004D4AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D25E39E2AF3ECE8004D4AE6 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCardContainerView.swift; sourceTree = "<group>"; };
 		6D25E3972AF3ECDF004D4AE6 /* GEC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GEC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D25E39A2AF3ECDF004D4AE6 /* GECApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GECApp.swift; sourceTree = "<group>"; };
 		6D25E39C2AF3ECDF004D4AE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034FEECF2B12EC2000030A8C /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				6D9E42892B009FC800B2D0EE /* DeliveryView.swift */,
+			);
+			path = Delivery;
+			sourceTree = "<group>";
+		};
+		034FEED02B12EC3600030A8C /* ProductsList */ = {
+			isa = PBXGroup;
+			children = (
+				6D9E428D2B0262EF00B2D0EE /* ProductsListView.swift */,
+			);
+			path = ProductsList;
+			sourceTree = "<group>";
+		};
+		034FEED12B12EC5600030A8C /* PaymentForm */ = {
+			isa = PBXGroup;
+			children = (
+				6D9E42872B009F8500B2D0EE /* PaymentFormView.swift */,
+			);
+			path = PaymentForm;
+			sourceTree = "<group>";
+		};
+		034FEED22B12EC7700030A8C /* CheckoutComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6D9E428B2B00A0B400B2D0EE /* CheckoutItemView.swift */,
+			);
+			path = CheckoutComponents;
+			sourceTree = "<group>";
+		};
+		034FEED32B12ECA500030A8C /* CommonComponents */ = {
+			isa = PBXGroup;
+			children = (
+				034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */,
+			);
+			path = CommonComponents;
+			sourceTree = "<group>";
+		};
+		034FEED62B12ED4600030A8C /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6D25E39C2AF3ECDF004D4AE6 /* HomeView.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		034FEED72B12ED5300030A8C /* CategoriesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6D25E3AC2AF3EE12004D4AE6 /* CategoriesView.swift */,
+			);
+			path = CategoriesScreen;
+			sourceTree = "<group>";
+		};
 		6D25E38E2AF3ECDF004D4AE6 = {
 			isa = PBXGroup;
 			children = (
@@ -65,11 +123,12 @@
 		6D25E3992AF3ECDF004D4AE6 /* GEC */ = {
 			isa = PBXGroup;
 			children = (
+				034FEED62B12ED4600030A8C /* HomeScreen */,
+				034FEED72B12ED5300030A8C /* CategoriesScreen */,
+				034FEED32B12ECA500030A8C /* CommonComponents */,
 				6D9E42842B0091B000B2D0EE /* CheckoutScreen */,
 				6D25E39A2AF3ECDF004D4AE6 /* GECApp.swift */,
-				6D25E39C2AF3ECDF004D4AE6 /* HomeView.swift */,
 				6D25E3A82AF3EDA2004D4AE6 /* MainTabBarView.swift */,
-				6D25E3AC2AF3EE12004D4AE6 /* CategoriesView.swift */,
 				6D25E39E2AF3ECE8004D4AE6 /* Assets.xcassets */,
 				6D25E3A02AF3ECE8004D4AE6 /* Preview Content */,
 			);
@@ -87,11 +146,11 @@
 		6D9E42842B0091B000B2D0EE /* CheckoutScreen */ = {
 			isa = PBXGroup;
 			children = (
+				034FEED22B12EC7700030A8C /* CheckoutComponents */,
+				034FEECF2B12EC2000030A8C /* Delivery */,
+				034FEED12B12EC5600030A8C /* PaymentForm */,
+				034FEED02B12EC3600030A8C /* ProductsList */,
 				6D9E42852B0091C700B2D0EE /* MainCheckoutView.swift */,
-				6D9E42872B009F8500B2D0EE /* PaymentFormView.swift */,
-				6D9E42892B009FC800B2D0EE /* DeliveryView.swift */,
-				6D9E428B2B00A0B400B2D0EE /* CheckoutItemView.swift */,
-				6D9E428D2B0262EF00B2D0EE /* ProductsListView.swift */,
 			);
 			path = CheckoutScreen;
 			sourceTree = "<group>";
@@ -169,6 +228,7 @@
 				6D25E3AD2AF3EE12004D4AE6 /* CategoriesView.swift in Sources */,
 				6D9E428E2B0262EF00B2D0EE /* ProductsListView.swift in Sources */,
 				6D9E428C2B00A0B400B2D0EE /* CheckoutItemView.swift in Sources */,
+				034FEED52B12ECD800030A8C /* GenericCardContainerView.swift in Sources */,
 				6D9E428A2B009FC800B2D0EE /* DeliveryView.swift in Sources */,
 				6D25E39D2AF3ECDF004D4AE6 /* HomeView.swift in Sources */,
 				6D25E3A92AF3EDA2004D4AE6 /* MainTabBarView.swift in Sources */,
