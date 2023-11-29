@@ -15,6 +15,7 @@ struct ProductsListView: View {
                 .bold()
                 .padding(.all, 10)
             CheckoutProductView()
+                .padding(.bottom, 20)
             CheckoutProductView()
         }
     }

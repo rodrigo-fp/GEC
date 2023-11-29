@@ -10,13 +10,14 @@ import SwiftUI
 struct CheckoutProductView: View {
     
     var body: some View {
-        GenericCardContainerView {
             VStack(alignment: .leading, spacing: 15) {
                 estimatedDelivery
                 ProductInformationView()
                 promotionSelector
-            }.padding(.bottom, 15)
-        }
+            }
+            .padding()
+            .cardStyle(backgroundColor: .white)
+            .padding(.all, 10)
     }
     
     private var estimatedDelivery: some View {

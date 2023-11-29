@@ -17,9 +17,12 @@ struct CheckoutItemView<ComponentView: View>: View {
             Text(titleItem)
                 .bold()
                 .padding(.all, 10)
-            GenericCardContainerView {
+            VStack(alignment: .leading) {
                 component
+                    .padding()
             }
+            .cardStyle(backgroundColor: .white)
+            .padding([.leading, .trailing], 10)
         }
     }
     
@@ -32,7 +35,11 @@ struct CheckoutItemView<ComponentView: View>: View {
 struct CheckoutItemView_Previews: PreviewProvider {
     static var previews: some View {
         CheckoutItemView(titleItem: "1. Entrega") {
-            Text("This is test")
+            VStack {
+                Text("This is test")
+                Text("This is test")
+            }
+
         }
     }
 }
