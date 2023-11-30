@@ -14,7 +14,7 @@ struct MainCheckoutView: View {
             StickyTopComponent()
             ScrollView {
                 VStack(alignment: .leading) {
-                    DeliveryView()
+                    DeliveryView(model: .fake)
                     PaymentFormView()
                     ProductsListView()
                     PurchaseSummaryView()

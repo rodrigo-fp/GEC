@@ -8,22 +8,33 @@
 import SwiftUI
 
 struct DeliveryView: View {
+    private struct Constants {
+        static let titleView = "1.- Entrega"
+        static let changeDelivery = "Cambiar"
+    }
+    
+    private let model: DeliveryViewModel
+    
     var body: some View {
-        CheckoutItemView(titleItem: "1.- Entrega") {
+        CheckoutItemView(titleItem: Constants.titleView) {
             HStack {
-                Text("Click & Collect")
+                Text(model.deliveryTitle)
                     .bold()
-                Text("Cambiar")
+                Text(Constants.changeDelivery)
                     .underline()
                 Spacer()
             }.padding(.bottom, -20)
-            Text("Liverpool Santa Fe")
+            Text(model.deliveryPlace)
         }
+    }
+    
+    init(model: DeliveryViewModel) {
+        self.model = model
     }
 }
 
 struct DeliveryView_Previews: PreviewProvider {
     static var previews: some View {
-        DeliveryView()
+        DeliveryView(model: .fake)
     }
 }
