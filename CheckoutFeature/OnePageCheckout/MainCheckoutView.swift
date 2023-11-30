@@ -16,7 +16,7 @@ struct MainCheckoutView: View {
                 VStack(alignment: .leading) {
                     DeliveryView(viewModel: .fake)
                     PaymentFormView(viewModel: .fake)
-                    ProductsListView()
+                    ProductsListView(viewModels: [.fake, .fake])
                     PurchaseSummaryView()
                     TermsAndPrivacyView()
                 }
