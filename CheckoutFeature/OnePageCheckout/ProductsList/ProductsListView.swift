@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ProductsListView: View {
     
+    private enum Constants {
+        static let titleView = "3. Artículos"
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Text("3. Artículos")
+            Text(Constants.titleView)
                 .bold()
                 .padding(.all, 10)
             CheckoutProductView()
