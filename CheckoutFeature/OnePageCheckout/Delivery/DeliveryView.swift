@@ -13,28 +13,28 @@ struct DeliveryView: View {
         static let changeDelivery = "Cambiar"
     }
     
-    private let model: DeliveryViewModel
+    private let viewModel: DeliveryViewModel
     
     var body: some View {
         CheckoutItemView(titleItem: Constants.titleView) {
             HStack {
-                Text(model.deliveryTitle)
+                Text(viewModel.deliveryTitle)
                     .bold()
                 Text(Constants.changeDelivery)
                     .underline()
                 Spacer()
             }.padding(.bottom, -20)
-            Text(model.deliveryPlace)
+            Text(viewModel.deliveryPlace)
         }
     }
     
-    init(model: DeliveryViewModel) {
-        self.model = model
+    init(viewModel: DeliveryViewModel) {
+        self.viewModel = viewModel
     }
 }
 
 struct DeliveryView_Previews: PreviewProvider {
     static var previews: some View {
-        DeliveryView(model: .fake)
+        DeliveryView(viewModel: .fake)
     }
 }
