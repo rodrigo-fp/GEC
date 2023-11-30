@@ -18,9 +18,9 @@ struct ProductsListView: View {
             Text(Constants.titleView)
                 .bold()
                 .padding(.all, 10)
-            CheckoutProductView()
+            CheckoutProductView(viewModel: .fake)
                 .padding(.bottom, 20)
-            CheckoutProductView()
+            CheckoutProductView(viewModel: .fake)
         }
     }
 }
