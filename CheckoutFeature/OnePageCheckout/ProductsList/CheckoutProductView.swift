@@ -11,7 +11,7 @@ struct CheckoutProductView: View {
     var body: some View {
             VStack(alignment: .leading, spacing: 15) {
                 ProductEstimatedDeliveryView(viewModel: .fake)
-                ProductInformationView()
+                ProductInformationView(viewModel: .fake)
                 PromotionSelectorView(viewModel: .fake)
             }
             .padding()

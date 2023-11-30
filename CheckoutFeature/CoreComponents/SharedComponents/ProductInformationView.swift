@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ProductInformationView: View {
+    private enum Constants {
+        static let minusImageName = "trash"
+        static let plusImageName = "trash"
+        static let optionImageName = "ellipsis"
+    }
     
     @State private var quantity: String = ""
+    
+    private let viewModel: ProductInformationViewModel
     
     var body: some View {
         HStack(alignment: .top) {
@@ -27,25 +34,29 @@ struct ProductInformationView: View {
     
     private var productInformation: some View {
         VStack(alignment: .leading, spacing: 15) {
-            Text("Abrigo Gianfranco Dunna con bolsillos para hombre")
-            Text("Cantidad: 1, Talla: G, Color: Gris, Material: Poliéster")
-            Text("$1,899.00")
+            Text(viewModel.productTitle)
+            Text(viewModel.productInformationDescription)
+            Text(viewModel.productFinalPrice)
             quantityModifier
         }.fixedSize(horizontal: false, vertical: true) // This prevents truncating text inside vstack
     }
     
     private var quantityModifier: some View {
         HStack(alignment: .center) {
-            Image(systemName: "trash")
-            TextField("1", text: $quantity)
+            Image(systemName: Constants.minusImageName)
+            TextField(viewModel.productQuantity, text: $quantity)
                 .background(.gray)
-            Image(systemName: "trash")
+            Image(systemName: Constants.plusImageName)
         }
     }
     
     private var optionButton: some View {
-        Image(systemName: "ellipsis")
+        Image(systemName: Constants.optionImageName)
             .rotationEffect(.degrees(90))
             .padding(.top, 15)
+    }
+    
+    init(viewModel: ProductInformationViewModel) {
+        self.viewModel = viewModel
     }
 }
