@@ -16,7 +16,7 @@
 		034FEEE92B12FF0400030A8C /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEEE82B12FF0400030A8C /* AppColors.swift */; };
 		034FEEEC2B13A0FE00030A8C /* ProductInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEEEB2B13A0FE00030A8C /* ProductInformationView.swift */; };
 		034FEEEF2B17FFA800030A8C /* View+CardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEEEE2B17FFA800030A8C /* View+CardStyle.swift */; };
-		6D25E39B2AF3ECDF004D4AE6 /* GECApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25E39A2AF3ECDF004D4AE6 /* GECApp.swift */; };
+		6D25E39B2AF3ECDF004D4AE6 /* CheckoutFeatureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25E39A2AF3ECDF004D4AE6 /* CheckoutFeatureApp.swift */; };
 		6D25E39F2AF3ECE8004D4AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D25E39E2AF3ECE8004D4AE6 /* Assets.xcassets */; };
 		6D25E3A22AF3ECE8004D4AE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D25E3A12AF3ECE8004D4AE6 /* Preview Assets.xcassets */; };
 		6D9E42862B0091C700B2D0EE /* MainCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E42852B0091C700B2D0EE /* MainCheckoutView.swift */; };
@@ -36,9 +36,9 @@
 		034FEEE82B12FF0400030A8C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		034FEEEB2B13A0FE00030A8C /* ProductInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInformationView.swift; sourceTree = "<group>"; };
 		034FEEEE2B17FFA800030A8C /* View+CardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CardStyle.swift"; sourceTree = "<group>"; };
-		6D25E3972AF3ECDF004D4AE6 /* GEC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GEC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D25E39A2AF3ECDF004D4AE6 /* GECApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GECApp.swift; sourceTree = "<group>"; };
-		6D25E39E2AF3ECE8004D4AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D25E3972AF3ECDF004D4AE6 /* CheckoutFeature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckoutFeature.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D25E39A2AF3ECDF004D4AE6 /* CheckoutFeatureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CheckoutFeatureApp.swift; path = CheckoutFeature/CheckoutFeatureApp.swift; sourceTree = "<group>"; };
+		6D25E39E2AF3ECE8004D4AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CheckoutFeature/Assets.xcassets; sourceTree = "<group>"; };
 		6D25E3A12AF3ECE8004D4AE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D9E42852B0091C700B2D0EE /* MainCheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCheckoutView.swift; sourceTree = "<group>"; };
 		6D9E42872B009F8500B2D0EE /* PaymentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormView.swift; sourceTree = "<group>"; };
@@ -100,7 +100,8 @@
 				034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */,
 				034FEEEE2B17FFA800030A8C /* View+CardStyle.swift */,
 			);
-			path = CoreComponents;
+			name = CoreComponents;
+			path = CheckoutFeature/CoreComponents;
 			sourceTree = "<group>";
 		};
 		034FEEDC2B12F40F00030A8C /* PurchaseSummary */ = {
@@ -123,14 +124,16 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = PaymentFormList;
+			name = PaymentFormList;
+			path = CheckoutFeature/PaymentFormList;
 			sourceTree = "<group>";
 		};
 		034FEEE62B12FE8F00030A8C /* AddressesList */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = AddressesList;
+			name = AddressesList;
+			path = CheckoutFeature/AddressesList;
 			sourceTree = "<group>";
 		};
 		034FEEE72B12FEF100030A8C /* DesignSystem */ = {
@@ -138,7 +141,8 @@
 			children = (
 				034FEEE82B12FF0400030A8C /* AppColors.swift */,
 			);
-			path = DesignSystem;
+			name = DesignSystem;
+			path = CheckoutFeature/DesignSystem;
 			sourceTree = "<group>";
 		};
 		034FEEEA2B13A0EF00030A8C /* SharedComponents */ = {
@@ -153,13 +157,14 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = ShoppingBag;
+			name = ShoppingBag;
+			path = CheckoutFeature/ShoppingBag;
 			sourceTree = "<group>";
 		};
 		6D25E38E2AF3ECDF004D4AE6 = {
 			isa = PBXGroup;
 			children = (
-				6D25E3992AF3ECDF004D4AE6 /* GEC */,
+				6D25E3992AF3ECDF004D4AE6 /* CheckoutFeature */,
 				6D25E3982AF3ECDF004D4AE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,12 +172,12 @@
 		6D25E3982AF3ECDF004D4AE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6D25E3972AF3ECDF004D4AE6 /* GEC.app */,
+				6D25E3972AF3ECDF004D4AE6 /* CheckoutFeature.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6D25E3992AF3ECDF004D4AE6 /* GEC */ = {
+		6D25E3992AF3ECDF004D4AE6 /* CheckoutFeature */ = {
 			isa = PBXGroup;
 			children = (
 				034FEEE72B12FEF100030A8C /* DesignSystem */,
@@ -181,11 +186,11 @@
 				6D9E42842B0091B000B2D0EE /* OnePageCheckout */,
 				034FEEE62B12FE8F00030A8C /* AddressesList */,
 				034FEEE52B12FE7000030A8C /* PaymentFormList */,
-				6D25E39A2AF3ECDF004D4AE6 /* GECApp.swift */,
+				6D25E39A2AF3ECDF004D4AE6 /* CheckoutFeatureApp.swift */,
 				6D25E39E2AF3ECE8004D4AE6 /* Assets.xcassets */,
 				6D25E3A02AF3ECE8004D4AE6 /* Preview Content */,
 			);
-			path = GEC;
+			name = CheckoutFeature;
 			sourceTree = "<group>";
 		};
 		6D25E3A02AF3ECE8004D4AE6 /* Preview Content */ = {
@@ -193,7 +198,8 @@
 			children = (
 				6D25E3A12AF3ECE8004D4AE6 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			name = "Preview Content";
+			path = "CheckoutFeature/Preview Content";
 			sourceTree = "<group>";
 		};
 		6D9E42842B0091B000B2D0EE /* OnePageCheckout */ = {
@@ -207,15 +213,16 @@
 				034FEEDF2B12F8BA00030A8C /* TermsAndPrivacy */,
 				6D9E42852B0091C700B2D0EE /* MainCheckoutView.swift */,
 			);
-			path = OnePageCheckout;
+			name = OnePageCheckout;
+			path = CheckoutFeature/OnePageCheckout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6D25E3962AF3ECDF004D4AE6 /* GEC */ = {
+		6D25E3962AF3ECDF004D4AE6 /* CheckoutFeature */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D25E3A52AF3ECE8004D4AE6 /* Build configuration list for PBXNativeTarget "GEC" */;
+			buildConfigurationList = 6D25E3A52AF3ECE8004D4AE6 /* Build configuration list for PBXNativeTarget "CheckoutFeature" */;
 			buildPhases = (
 				6D25E3932AF3ECDF004D4AE6 /* Sources */,
 				6D25E3942AF3ECDF004D4AE6 /* Frameworks */,
@@ -225,9 +232,9 @@
 			);
 			dependencies = (
 			);
-			name = GEC;
+			name = CheckoutFeature;
 			productName = GEC;
-			productReference = 6D25E3972AF3ECDF004D4AE6 /* GEC.app */;
+			productReference = 6D25E3972AF3ECDF004D4AE6 /* CheckoutFeature.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +252,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6D25E3922AF3ECDF004D4AE6 /* Build configuration list for PBXProject "GEC" */;
+			buildConfigurationList = 6D25E3922AF3ECDF004D4AE6 /* Build configuration list for PBXProject "CheckoutFeature" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -258,7 +265,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D25E3962AF3ECDF004D4AE6 /* GEC */,
+				6D25E3962AF3ECDF004D4AE6 /* CheckoutFeature */,
 			);
 		};
 /* End PBXProject section */
@@ -290,7 +297,7 @@
 				034FEEDE2B12F42900030A8C /* PurchaseSummaryView.swift in Sources */,
 				034FEEE32B12FAD700030A8C /* CheckoutProductView.swift in Sources */,
 				6D9E42882B009F8500B2D0EE /* PaymentFormView.swift in Sources */,
-				6D25E39B2AF3ECDF004D4AE6 /* GECApp.swift in Sources */,
+				6D25E39B2AF3ECDF004D4AE6 /* CheckoutFeatureApp.swift in Sources */,
 				034FEEE92B12FF0400030A8C /* AppColors.swift in Sources */,
 				6D9E42862B0091C700B2D0EE /* MainCheckoutView.swift in Sources */,
 				034FEED92B12EE0D00030A8C /* StickyBottomComponent.swift in Sources */,
@@ -422,8 +429,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GEC/Preview Content\"";
-				DEVELOPMENT_TEAM = 95GB72XJX7;
+				DEVELOPMENT_ASSET_PATHS = "\"CheckoutFeature/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -451,8 +458,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GEC/Preview Content\"";
-				DEVELOPMENT_TEAM = 95GB72XJX7;
+				DEVELOPMENT_ASSET_PATHS = "\"CheckoutFeature/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -476,7 +483,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6D25E3922AF3ECDF004D4AE6 /* Build configuration list for PBXProject "GEC" */ = {
+		6D25E3922AF3ECDF004D4AE6 /* Build configuration list for PBXProject "CheckoutFeature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D25E3A32AF3ECE8004D4AE6 /* Debug */,
@@ -485,7 +492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D25E3A52AF3ECE8004D4AE6 /* Build configuration list for PBXNativeTarget "GEC" */ = {
+		6D25E3A52AF3ECE8004D4AE6 /* Build configuration list for PBXNativeTarget "CheckoutFeature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D25E3A62AF3ECE8004D4AE6 /* Debug */,

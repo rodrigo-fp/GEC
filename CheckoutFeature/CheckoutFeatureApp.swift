@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct GECApp: App {
+struct CheckoutFeatureApp: App {
     var body: some Scene {
         WindowGroup {
             MainCheckoutView()
