@@ -1,5 +1,5 @@
 //
-//  ExpressCheckoutItemView.swift
+//  CheckoutMainView.swift
 //  GEC
 //
 //  Created by RODRIGO FRANCISCO PABLO on 11/11/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainCheckoutView: View {
+struct CheckoutMainView: View {
 
     var body: some View {
         VStack {
@@ -29,6 +29,6 @@ struct MainCheckoutView: View {
 
 struct CheckoutView_Previews: PreviewProvider {
     static var previews: some View {
-        MainCheckoutView()
+        CheckoutMainView()
     }
 }
