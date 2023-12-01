@@ -13,7 +13,7 @@
 		032446822B181C2C008FBD8F /* PromotionSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446812B181C2C008FBD8F /* PromotionSelectorView.swift */; };
 		032446842B181E83008FBD8F /* ProductInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446832B181E83008FBD8F /* ProductInformationViewModel.swift */; };
 		032446872B1A51F1008FBD8F /* AirtimeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446862B1A51F0008FBD8F /* AirtimeMainView.swift */; };
-		0324468A2B1A6809008FBD8F /* AirtimePhoneNumberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446892B1A6809008FBD8F /* AirtimePhoneNumberListView.swift */; };
+		0324468A2B1A6809008FBD8F /* AirtimeGenericListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446892B1A6809008FBD8F /* AirtimeGenericListView.swift */; };
 		0324468C2B1A6983008FBD8F /* ThreeDotOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324468B2B1A6983008FBD8F /* ThreeDotOptionButton.swift */; };
 		0324468E2B1A8E87008FBD8F /* PhoneNumberInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */; };
 		034FEED52B12ECD800030A8C /* GenericCardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */; };
@@ -42,7 +42,7 @@
 		032446812B181C2C008FBD8F /* PromotionSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionSelectorView.swift; sourceTree = "<group>"; };
 		032446832B181E83008FBD8F /* ProductInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInformationViewModel.swift; sourceTree = "<group>"; };
 		032446862B1A51F0008FBD8F /* AirtimeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimeMainView.swift; sourceTree = "<group>"; };
-		032446892B1A6809008FBD8F /* AirtimePhoneNumberListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimePhoneNumberListView.swift; sourceTree = "<group>"; };
+		032446892B1A6809008FBD8F /* AirtimeGenericListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimeGenericListView.swift; sourceTree = "<group>"; };
 		0324468B2B1A6983008FBD8F /* ThreeDotOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDotOptionButton.swift; sourceTree = "<group>"; };
 		0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInfoView.swift; sourceTree = "<group>"; };
 		034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCardContainerView.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		032446882B1A67EE008FBD8F /* AirtimeNumbersList */ = {
 			isa = PBXGroup;
 			children = (
-				032446892B1A6809008FBD8F /* AirtimePhoneNumberListView.swift */,
+				032446892B1A6809008FBD8F /* AirtimeGenericListView.swift */,
 				0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */,
 			);
 			path = AirtimeNumbersList;
@@ -340,7 +340,7 @@
 				032446872B1A51F1008FBD8F /* AirtimeMainView.swift in Sources */,
 				034FEED52B12ECD800030A8C /* GenericCardContainerView.swift in Sources */,
 				6D9E428A2B009FC800B2D0EE /* DeliveryView.swift in Sources */,
-				0324468A2B1A6809008FBD8F /* AirtimePhoneNumberListView.swift in Sources */,
+				0324468A2B1A6809008FBD8F /* AirtimeGenericListView.swift in Sources */,
 				034FEEEF2B17FFA800030A8C /* View+CardStyle.swift in Sources */,
 				0324467E2B181624008FBD8F /* PaymentFormViewModel.swift in Sources */,
 				032446802B1819F9008FBD8F /* ProductEstimatedDeliveryView.swift in Sources */,

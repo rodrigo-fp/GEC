@@ -7,23 +7,26 @@
 
 import SwiftUI
 
-struct AirtimePhoneNumberListView: View {
+struct AirtimeGenericListView: View {
+    private let title: String
+    private let actionName: String
+    
     var body: some View {
         VStack {
             ScrollView {
-                itemList
+                itemsListView
             }.background(Color.lightGrayBackground)
             stickyBottomView
         }
     }
     
-    private var itemList: some View {
+    private var itemsListView: some View {
         VStack(spacing: 0) {
             titleView
             VStack {
-                PhoneNumberInfoView()
-                PhoneNumberInfoView()
-                PhoneNumberInfoView()
+                PhoneNumberInfoView(viewModel: .fake)
+                PhoneNumberInfoView(viewModel: .fake)
+                PhoneNumberInfoView(viewModel: .fake)
                 addNewItemView
             }
             .background(Color.white)
@@ -36,7 +39,7 @@ struct AirtimePhoneNumberListView: View {
     }
     
     private var titleView: some View {
-        Text("1. selecciona tus números a recargar")
+        Text(title)
             .bold()
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -45,7 +48,7 @@ struct AirtimePhoneNumberListView: View {
     
     private var addNewItemView: some View {
         HStack {
-            Text("Agregar teléfono")
+            Text(actionName)
                 .fontWeight(.semibold)
             Spacer()
             Image(systemName: "chevron.right")
@@ -53,8 +56,13 @@ struct AirtimePhoneNumberListView: View {
         .padding()
         
     }
+    
+    init(title: String, actionName: String) {
+        self.title = title
+        self.actionName = actionName
+    }
 }
 
 #Preview {
-    AirtimePhoneNumberListView()
+    AirtimeGenericListView(title: "1. selecciona tus números a recargar", actionName: "Agregar teléfono")
 }
