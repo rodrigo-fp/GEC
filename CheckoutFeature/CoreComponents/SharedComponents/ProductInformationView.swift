@@ -11,7 +11,6 @@ struct ProductInformationView: View {
     private enum Constants {
         static let minusImageName = "trash"
         static let plusImageName = "trash"
-        static let optionImageName = "ellipsis"
     }
     
     @State private var quantity: String = ""
@@ -22,7 +21,7 @@ struct ProductInformationView: View {
         HStack(alignment: .top) {
             productImage
             productInformation
-            optionButton
+            ThreeDotOptionButton()
         }
     }
     
@@ -48,12 +47,6 @@ struct ProductInformationView: View {
                 .background(.gray)
             Image(systemName: Constants.plusImageName)
         }
-    }
-    
-    private var optionButton: some View {
-        Image(systemName: Constants.optionImageName)
-            .rotationEffect(.degrees(90))
-            .padding(.top, 15)
     }
     
     init(viewModel: ProductInformationViewModel) {
