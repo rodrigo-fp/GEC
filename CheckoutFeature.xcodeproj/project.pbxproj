@@ -15,6 +15,7 @@
 		032446872B1A51F1008FBD8F /* AirtimeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446862B1A51F0008FBD8F /* AirtimeMainView.swift */; };
 		0324468A2B1A6809008FBD8F /* AirtimePhoneNumberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446892B1A6809008FBD8F /* AirtimePhoneNumberListView.swift */; };
 		0324468C2B1A6983008FBD8F /* ThreeDotOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324468B2B1A6983008FBD8F /* ThreeDotOptionButton.swift */; };
+		0324468E2B1A8E87008FBD8F /* PhoneNumberInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */; };
 		034FEED52B12ECD800030A8C /* GenericCardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */; };
 		034FEED92B12EE0D00030A8C /* WideButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEED82B12EE0D00030A8C /* WideButtonView.swift */; };
 		034FEEDB2B12F16300030A8C /* StickyTopComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEEDA2B12F16300030A8C /* StickyTopComponent.swift */; };
@@ -43,6 +44,7 @@
 		032446862B1A51F0008FBD8F /* AirtimeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimeMainView.swift; sourceTree = "<group>"; };
 		032446892B1A6809008FBD8F /* AirtimePhoneNumberListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimePhoneNumberListView.swift; sourceTree = "<group>"; };
 		0324468B2B1A6983008FBD8F /* ThreeDotOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDotOptionButton.swift; sourceTree = "<group>"; };
+		0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInfoView.swift; sourceTree = "<group>"; };
 		034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCardContainerView.swift; sourceTree = "<group>"; };
 		034FEED82B12EE0D00030A8C /* WideButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideButtonView.swift; sourceTree = "<group>"; };
 		034FEEDA2B12F16300030A8C /* StickyTopComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyTopComponent.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				032446892B1A6809008FBD8F /* AirtimePhoneNumberListView.swift */,
+				0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */,
 			);
 			path = AirtimeNumbersList;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				6D9E42862B0091C700B2D0EE /* CheckoutMainView.swift in Sources */,
 				034FEED92B12EE0D00030A8C /* WideButtonView.swift in Sources */,
 				0324468C2B1A6983008FBD8F /* ThreeDotOptionButton.swift in Sources */,
+				0324468E2B1A8E87008FBD8F /* PhoneNumberInfoView.swift in Sources */,
 				034FEEEC2B13A0FE00030A8C /* ProductInformationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

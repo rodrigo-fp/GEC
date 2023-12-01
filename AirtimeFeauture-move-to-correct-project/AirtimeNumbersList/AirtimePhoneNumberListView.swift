@@ -11,20 +11,20 @@ struct AirtimePhoneNumberListView: View {
     var body: some View {
         VStack {
             ScrollView {
-                phonesList
+                itemList
             }.background(Color.lightGrayBackground)
             stickyBottomView
-        }.background(Color.lightGrayBackground)
+        }
     }
     
-    private var phonesList: some View {
+    private var itemList: some View {
         VStack(spacing: 0) {
             titleView
             VStack {
-                phoneNumberInfoView
-                phoneNumberInfoView
-                phoneNumberInfoView
-                addNewPhoneNumberView
+                PhoneNumberInfoView()
+                PhoneNumberInfoView()
+                PhoneNumberInfoView()
+                addNewItemView
             }
             .background(Color.white)
         }
@@ -43,26 +43,7 @@ struct AirtimePhoneNumberListView: View {
             .background(Color.white)
     }
     
-    private var phoneNumberInfoView: some View {
-        VStack {
-            HStack(alignment: .top, spacing: 20) {
-                Image(systemName: "square")
-                    .frame(width: 30, height: 30)
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Mi numero")
-                    Text("(55) 572324234")
-                    Text("Unefon")
-                        .fontWeight(.thin)
-                }
-                Spacer()
-                ThreeDotOptionButton()
-            }
-            .padding()
-            Divider()
-        }
-    }
-    
-    private var addNewPhoneNumberView: some View {
+    private var addNewItemView: some View {
         HStack {
             Text("Agregar teléfono")
                 .fontWeight(.semibold)
