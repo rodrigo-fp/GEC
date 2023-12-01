@@ -10,7 +10,7 @@ import SwiftUI
 struct TermsAndPrivacyView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 12) {
-            Text("He leído y acepto Térmnos, Condiciones y Aviso de Privacidad")
+            Text("He leído y acepto Términos, Condiciones y Aviso de Privacidad")
                 .multilineTextAlignment(.center)
             HStack {
                 Image(systemName: "lock")
