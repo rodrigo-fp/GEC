@@ -7,20 +7,26 @@
 
 import SwiftUI
 
-struct StickyBottomComponent: View {
+struct WideButtonView: View {
+    private let title: String
+    
     var body: some View {
         Button(action: {
             print("Do nothing")
         }, label: {
-            Text("Terminar compra")
+            Text(title)
                 .padding()
                 .frame(maxWidth: .infinity)
                 .foregroundStyle(.white)
                 .background(.pink)
         }).padding()
     }
+    
+    init(title: String) {
+        self.title = title
+    }
 }
 
 #Preview {
-    StickyBottomComponent()
+    WideButtonView(title: "Terminar compra")
 }

@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct CheckoutMainView: View {
+    
+    private enum Constants {
+        static let navigationTitle = "Liverpool Pocket"
+        static let finishPurchase = "Terminar compra"
+    }
 
     var body: some View {
         NavigationStack {
             mainView
-            .navigationTitle("Liverpool pocket")
+                .navigationTitle(Constants.navigationTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(Color.pink, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
@@ -32,8 +37,12 @@ struct CheckoutMainView: View {
                 }
             }
             .background(Color.lightGrayBackground)
-            StickyBottomComponent()
+            stickyBottomComponent
         }
+    }
+    
+    private var stickyBottomComponent: some View {
+        WideButtonView(title: Constants.finishPurchase)
     }
 }
 
