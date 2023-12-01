@@ -68,7 +68,7 @@ struct AirtimeGenericListView<Component: View>: View {
     AirtimeGenericListView(title: "1. selecciona tus números a recargar", actionName: "Agregar teléfono", itemsView: {
         VStack {
             PhoneNumberInfoView(viewModel: .fake)
-            PhoneNumberInfoView(viewModel: .fake)
+            PaymentCardView(viewModel: .fake)
         }
     })
 }

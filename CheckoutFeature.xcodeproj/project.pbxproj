@@ -16,6 +16,9 @@
 		0324468A2B1A6809008FBD8F /* AirtimeGenericListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446892B1A6809008FBD8F /* AirtimeGenericListView.swift */; };
 		0324468C2B1A6983008FBD8F /* ThreeDotOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324468B2B1A6983008FBD8F /* ThreeDotOptionButton.swift */; };
 		0324468E2B1A8E87008FBD8F /* PhoneNumberInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */; };
+		032446902B1A9559008FBD8F /* PhoneNumbersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324468F2B1A9559008FBD8F /* PhoneNumbersListView.swift */; };
+		032446942B1A95F2008FBD8F /* PaymentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446932B1A95F2008FBD8F /* PaymentCardView.swift */; };
+		032446962B1A991A008FBD8F /* PaymentCardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032446952B1A991A008FBD8F /* PaymentCardsListView.swift */; };
 		034FEED52B12ECD800030A8C /* GenericCardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */; };
 		034FEED92B12EE0D00030A8C /* WideButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEED82B12EE0D00030A8C /* WideButtonView.swift */; };
 		034FEEDB2B12F16300030A8C /* StickyTopComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034FEEDA2B12F16300030A8C /* StickyTopComponent.swift */; };
@@ -45,6 +48,9 @@
 		032446892B1A6809008FBD8F /* AirtimeGenericListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimeGenericListView.swift; sourceTree = "<group>"; };
 		0324468B2B1A6983008FBD8F /* ThreeDotOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDotOptionButton.swift; sourceTree = "<group>"; };
 		0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInfoView.swift; sourceTree = "<group>"; };
+		0324468F2B1A9559008FBD8F /* PhoneNumbersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumbersListView.swift; sourceTree = "<group>"; };
+		032446932B1A95F2008FBD8F /* PaymentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardView.swift; sourceTree = "<group>"; };
+		032446952B1A991A008FBD8F /* PaymentCardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardsListView.swift; sourceTree = "<group>"; };
 		034FEED42B12ECD800030A8C /* GenericCardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCardContainerView.swift; sourceTree = "<group>"; };
 		034FEED82B12EE0D00030A8C /* WideButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideButtonView.swift; sourceTree = "<group>"; };
 		034FEEDA2B12F16300030A8C /* StickyTopComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyTopComponent.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 			children = (
 				032446892B1A6809008FBD8F /* AirtimeGenericListView.swift */,
 				0324468D2B1A8E87008FBD8F /* PhoneNumberInfoView.swift */,
+				032446932B1A95F2008FBD8F /* PaymentCardView.swift */,
+				0324468F2B1A9559008FBD8F /* PhoneNumbersListView.swift */,
+				032446952B1A991A008FBD8F /* PaymentCardsListView.swift */,
 			);
 			path = AirtimeNumbersList;
 			sourceTree = "<group>";
@@ -330,8 +339,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032446942B1A95F2008FBD8F /* PaymentCardView.swift in Sources */,
 				034FEEDB2B12F16300030A8C /* StickyTopComponent.swift in Sources */,
 				032446842B181E83008FBD8F /* ProductInformationViewModel.swift in Sources */,
+				032446902B1A9559008FBD8F /* PhoneNumbersListView.swift in Sources */,
 				6D9E428E2B0262EF00B2D0EE /* ProductsListView.swift in Sources */,
 				0324467C2B18122D008FBD8F /* DeliveryViewModel.swift in Sources */,
 				034FEEE12B12F8E300030A8C /* TermsAndPrivacyView.swift in Sources */,
@@ -342,6 +353,7 @@
 				6D9E428A2B009FC800B2D0EE /* DeliveryView.swift in Sources */,
 				0324468A2B1A6809008FBD8F /* AirtimeGenericListView.swift in Sources */,
 				034FEEEF2B17FFA800030A8C /* View+CardStyle.swift in Sources */,
+				032446962B1A991A008FBD8F /* PaymentCardsListView.swift in Sources */,
 				0324467E2B181624008FBD8F /* PaymentFormViewModel.swift in Sources */,
 				032446802B1819F9008FBD8F /* ProductEstimatedDeliveryView.swift in Sources */,
 				034FEEDE2B12F42900030A8C /* PurchaseSummaryView.swift in Sources */,
