@@ -13,7 +13,7 @@ struct ProductsListView: View {
         static let titleView = "3. Artículos"
     }
     
-    private struct ViewModelWrapper<T>: Identifiable {
+    private struct ForEachWrapper<T>: Identifiable {
         let id = UUID()
         let viewModel: T
         
@@ -21,8 +21,8 @@ struct ProductsListView: View {
             self.viewModel = viewModel
         }
         
-        static func wrap(_ viewModels: [T]) -> [ViewModelWrapper<T>] {
-            return viewModels.map { ViewModelWrapper(viewModel: $0) }
+        static func wrap(_ viewModels: [T]) -> [ForEachWrapper<T>] {
+            return viewModels.map { ForEachWrapper(viewModel: $0) }
         }
     }
     
@@ -33,7 +33,7 @@ struct ProductsListView: View {
             Text(Constants.titleView)
                 .bold()
                 .padding(.all, 10)
-            ForEach(ViewModelWrapper.wrap(viewModels), id: \.id) {
+            ForEach(ForEachWrapper.wrap(viewModels), id: \.id) {
                 CheckoutProductView(viewModel: $0.viewModel)
                     .padding(.bottom, 20)
             }
