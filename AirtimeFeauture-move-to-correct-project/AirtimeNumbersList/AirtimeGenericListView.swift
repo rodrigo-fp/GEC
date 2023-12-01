@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct AirtimeGenericListView: View {
+struct AirtimeGenericListView<Component: View>: View {
     private let title: String
     private let actionName: String
+    
+    private let itemsView: Component
     
     var body: some View {
         VStack {
@@ -24,9 +26,7 @@ struct AirtimeGenericListView: View {
         VStack(spacing: 0) {
             titleView
             VStack {
-                PhoneNumberInfoView(viewModel: .fake)
-                PhoneNumberInfoView(viewModel: .fake)
-                PhoneNumberInfoView(viewModel: .fake)
+                itemsView
                 addNewItemView
             }
             .background(Color.white)
@@ -57,12 +57,18 @@ struct AirtimeGenericListView: View {
         
     }
     
-    init(title: String, actionName: String) {
+    init(title: String, actionName: String, itemsView: () -> Component) {
         self.title = title
         self.actionName = actionName
+        self.itemsView = itemsView()
     }
 }
 
 #Preview {
-    AirtimeGenericListView(title: "1. selecciona tus números a recargar", actionName: "Agregar teléfono")
+    AirtimeGenericListView(title: "1. selecciona tus números a recargar", actionName: "Agregar teléfono", itemsView: {
+        VStack {
+            PhoneNumberInfoView(viewModel: .fake)
+            PhoneNumberInfoView(viewModel: .fake)
+        }
+    })
 }
