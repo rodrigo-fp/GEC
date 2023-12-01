@@ -10,6 +10,16 @@ import SwiftUI
 struct CheckoutMainView: View {
 
     var body: some View {
+        NavigationStack {
+            mainView
+            .navigationTitle("Liverpool pocket")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(Color.pink, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+        }
+    }
+    
+    private var mainView: some View {
         VStack {
             StickyTopComponent()
             ScrollView {
