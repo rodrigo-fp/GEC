@@ -9,6 +9,15 @@ import SwiftUI
 
 struct AirtimePhoneNumberListView: View {
     var body: some View {
+        VStack {
+            ScrollView {
+                phonesList
+            }.background(Color.lightGrayBackground)
+            stickyBottomView
+        }.background(Color.lightGrayBackground)
+    }
+    
+    private var phonesList: some View {
         VStack(spacing: 0) {
             titleView
             VStack {
@@ -20,7 +29,10 @@ struct AirtimePhoneNumberListView: View {
             .background(Color.white)
         }
         .padding()
-        .background(Color.lightGrayBackground)
+    }
+    
+    private var stickyBottomView: some View {
+        WideButtonView(title: "Continuar")
     }
     
     private var titleView: some View {
