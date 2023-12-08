@@ -17,7 +17,6 @@ struct StickyTopComponent: View {
         }
         .padding()
         .background(.white)
-        
     }
 }
 
