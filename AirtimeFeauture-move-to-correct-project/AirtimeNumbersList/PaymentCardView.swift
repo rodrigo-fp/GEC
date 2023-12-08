@@ -43,7 +43,7 @@ struct PaymentCardView: View {
         .padding()
     }
     
-    var defaultCardLabel: (some View)? {
+    var defaultCardLabel: some View {
         Text(Constants.defaultCardText)
             .foregroundStyle(.blue)
             .frame(maxWidth: .infinity, alignment: .leading)
